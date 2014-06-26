@@ -19,7 +19,7 @@ addons:
     - google.com
     - asdf.com  
 addons:
-   firefox: "28.0"
+   firefox: "29.0"
 
 # Running the tests with grunt
 script:
