@@ -13,7 +13,11 @@ env:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
-  
+
+addons:
+   hosts:
+    - google.com
+    - asdf.com  
 
 # Running the tests with grunt
 script:
