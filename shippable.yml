@@ -18,6 +18,8 @@ addons:
    hosts:
     - google.com
     - asdf.com  
+addons:
+   firefox: "28.0"
 
 # Running the tests with grunt
 script:
