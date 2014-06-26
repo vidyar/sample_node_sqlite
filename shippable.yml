@@ -6,7 +6,7 @@ node_js:
   - 0.10.25
 
 # The path for Xunit to output test reports
-env
+env:
   - XUNIT_FILE=shippable/testresults/result.xml
 
 # Create directories for test and coverage reports
