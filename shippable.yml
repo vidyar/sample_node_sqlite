@@ -18,7 +18,6 @@ before_script:
 
 archive: true
 
-
 addons:
    hosts:
     - google.com
