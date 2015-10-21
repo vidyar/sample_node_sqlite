@@ -13,7 +13,7 @@ db.run("CREATE TABLE Foo(name TEXT)", function(err, row) {
 
 /* Routes */
 app.get("/", function (req, res) {
-  res.send("Hey buddy!");
+  res.send("Heyyy buddy!");
 });
 
 app.get("/:name", function (req, res) {
