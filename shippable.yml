@@ -1,6 +1,8 @@
 # Language setting
 language: node_js
 # Version number
+
+
 node_js:
   - 0.10.25
 #  - 0.11
@@ -33,7 +35,3 @@ after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
  
-#cache: true  
-branches:
-  except:
-    - test-master   
