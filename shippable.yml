@@ -8,6 +8,9 @@ node_js:
 # The path for Xunit to output test reports
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
+  - Foo=bar
+  - secure: oA4LNEK7w5m6dS/BdFxTQnJfM7JnON4W1Y93j1TTK2BUfxDrPu7OxVyveCFZsh5YPu3QOX5YMbsOnFfesRO01icobKqAtUtksPJ3JyjXZhRwdRm+PirHIqnbCX3WL+3NTr4ysPtE46IgtnVkejDp2BFPR7S7XjmE7TtKom7tVV84JBU3N5U+/fUGt/EN5F3hca4H5Mm5fFDCmZxQAvx8xqZYasKtNUu+mfcRgTXTCk+swjq1xA62Jdp1VuDLFYWNPT6trOYW+mxqVdUxOWeaHU1VoRMjMsSzQYIfdXhq9udoBpXTZ6fJ2ft8780Tes2vJDliGySVsfa28obg57H5kQ==
+
 
 # Create directories for test and coverage reports
 before_script:
@@ -32,6 +35,7 @@ script:
 after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
+  - echo $aa and $cc and $Foo
  
 #cache: true  
 branches:
